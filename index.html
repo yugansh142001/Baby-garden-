@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baby Garden | Baby Products, Toys &amp; Gifts in Moga, Punjab</title>
+<meta name="description" content="Baby Garden is Moga's trusted destination for premium baby toys, feeding essentials, strollers, walkers, and gifts. Visit us or shop with confidence.">
+
+<!-- ============================================
+     SEO / SOCIAL META — update if business details change
+     ============================================ -->
+<meta property="og:title" content="Baby Garden - Moga's Premium Baby Store">
+<meta property="og:description" content="Everything your little one needs under one roof.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#4FC3F7">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================
+     SCROLL PROGRESS BAR (footprint travels along this)
+     ============================================ -->
+<div class="scroll-progress" id="scrollProgress">
+  <span class="scroll-progress__print" id="scrollFoot">🐾</span>
+</div>
+
+<!-- ============================================
+     LOADING SCREEN
+     ============================================ -->
+<div class="loader" id="loader">
+  <div class="loader__mark">
+    <span>Baby</span><span class="loader__accent">Garden</span>
+  </div>
+</div>
+
+<!-- ============================================
+     NAVIGATION
+     ============================================ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#home" class="nav__logo">Baby<span>Garden</span></a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#categories">Categories</a>
+      <a href="#products">Products</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#why-us">Why Choose Us</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav__actions">
+      <!-- UPDATE PHONE NUMBER HERE -->
+      <a href="tel:+917009842642" class="btn btn--ghost nav__call">Call Now</a>
+      <!-- UPDATE INSTAGRAM LINK HERE -->
+      <a href="https://www.instagram.com/babygarden2021" target="_blank" rel="noopener" class="nav__icon-btn" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2c2.7 0 3.05.01 4.12.06 1.06.05 1.79.22 2.43.47a4.9 4.9 0 0 1 1.77 1.15 4.9 4.9 0 0 1 1.15 1.77c.25.64.42 1.37.47 2.43.05 1.07.06 1.41.06 4.12s-.01 3.05-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.64.25-1.37.42-2.43.47-1.07.05-1.41.06-4.12.06s-3.05-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.64-.42-1.37-.47-2.43C2.01 15.05 2 14.7 2 12s.01-3.05.06-4.12c.05-1.06.22-1.79.47-2.43a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.45 2.53c.64-.25 1.37-.42 2.43-.47C8.95 2.01 9.3 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-8.4a1.17 1.17 0 1 0 0-2.34 1.17 1.17 0 0 0 0 2.34z"/></svg>
+      </a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu overlay -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#categories">Categories</a>
+  <a href="#products">Products</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#why-us">Why Choose Us</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- ============================================
+     HERO SECTION
+     ============================================ -->
+<section class="hero" id="home">
+  <div class="hero__blob hero__blob--1"></div>
+  <div class="hero__blob hero__blob--2"></div>
+  <div class="hero__blob hero__blob--3"></div>
+
+  <!-- Floating toy shapes - decorative, purely CSS/SVG -->
+  <div class="hero__floaters" aria-hidden="true">
+    <span class="floater floater--1">🧸</span>
+    <span class="floater floater--2">🎈</span>
+    <span class="floater floater--3">🚂</span>
+    <span class="floater floater--4">🦆</span>
+    <span class="floater floater--5">⭐</span>
+  </div>
+
+  <div class="hero__content reveal">
+    <span class="eyebrow">Moga's Favourite Baby &amp; Toy Store</span>
+    <h1 class="hero__title">Everything Your Little One Needs, <span>Under One Roof</span></h1>
+    <p class="hero__subtitle">Premium Baby Products, Toys &amp; Gifts for Every Childhood.</p>
+    <div class="hero__actions">
+      <a href="#products" class="btn btn--primary">Explore Products</a>
+      <a href="#contact" class="btn btn--outline">Contact Us</a>
+    </div>
+
+    <div class="hero__stats">
+      <div class="stat"><span class="stat__num" data-count="1000">0</span><span class="stat__label">Happy Families</span></div>
+      <div class="stat"><span class="stat__num" data-count="500">0</span><span class="stat__label">Products</span></div>
+      <div class="stat"><span class="stat__num" data-count="5">0</span><span class="stat__label">Years Trusted</span></div>
+    </div>
+  </div>
+
+  <div class="scallop-divider" aria-hidden="true"></div>
+</section>
+
+<!-- ============================================
+     ABOUT SECTION
+     ============================================ -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about__grid">
+      <div class="about__media reveal">
+        <!-- Replace Image Here: main storefront / lifestyle photo -->
+        <div class="about__img-frame">
+          <img src="assets/images/about-store.jpg" alt="Baby Garden store in Moga" loading="lazy">
+        </div>
+        <div class="about__badge">
+          <span>5+</span>
+          <small>Years serving Moga families</small>
+        </div>
+      </div>
+
+      <div class="about__copy reveal">
+        <span class="eyebrow">About Baby Garden</span>
+        <h2 class="section-title">A little store with a very big heart for little ones</h2>
+        <p>Tucked in the heart of Moga, Baby Garden has grown into one of the city's most trusted destinations for everything a growing family needs — from a baby's very first walker to the gift you bring to their fifth birthday party.</p>
+        <p>We handpick every toy, every stroller, every soft blanket with one question in mind: would we choose this for our own children? That's the standard behind our entire collection.</p>
+
+        <ul class="about__list">
+          <li>Baby Toys &amp; Educational Toys</li>
+          <li>Soft Toys &amp; Dolls</li>
+          <li>Ride-on Toys &amp; Walkers</li>
+          <li>Strollers &amp; Feeding Accessories</li>
+          <li>Baby Care Essentials</li>
+          <li>Birthday &amp; Return Gifts</li>
+          <li>Kids Accessories &amp; School Essentials</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="scallop-divider scallop-divider--alt" aria-hidden="true"></div>
+</section>
+
+<!-- ============================================
+     CATEGORIES SECTION
+     ============================================ -->
+<section class="categories" id="categories">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Shop by Category</span>
+      <h2 class="section-title">Find exactly what your little one needs</h2>
+    </div>
+
+    <div class="category-grid">
+
+      <!-- ============ CATEGORY CARD TEMPLATE ============
+           Duplicate this <article> to add more categories.
+           Replace Image, Icon (emoji or svg), Title, Description.
+      ================================================= -->
+      <article class="category-card reveal">
+        <div class="category-card__img">
+          <img src="assets/images/categories/toys.jpg" alt="Toys" loading="lazy"> <!-- Replace Image Here -->
+        </div>
+        <div class="category-card__body">
+          <span class="category-card__icon">🧸</span> <!-- Replace Icon Here -->
+          <h3>Toys</h3> <!-- Replace Title Here -->
+          <p>Fun-filled toys for every age and stage.</p> <!-- Replace Description Here -->
+        </div>
+      </article>
+
+      <article class="category-card reveal">
+        <div class="category-card__img">
+          <img src="assets/images/categories/baby-care.jpg" alt="Baby Care" loading="lazy">
+        </div>
+        <div class="category-card__body">
+          <span class="category-card__icon">🍼</span>
+          <h3>Baby Care</h3>
+          <p>Gentle essentials for your baby's everyday care.</p>
+        </div>
+      </article>
+
+      <article class="category-card reveal">
+        <div class="category-card__img">
+          <img src="assets/images/categories/feeding.jpg" alt="Feeding Essentials" loading="lazy">
+        </div>
+        <div class="category-card__body">
+          <span class="category-card__icon">🥣</span>
+          <h3>Feeding Essentials</h3>
+          <p>Everything for happy, mess-free mealtimes.</p>
+        </div>
+      </article>
+
+      <article class="category-card reveal">
+        <div class="category-card__img">
+          <img src="assets/images/categories/walkers.jpg" alt="Baby Walkers" loading="lazy">
+        </div>
+        <div class="category-card__body">
+          <span class="category-card__icon">🚶</span>
+          <h3>Baby Walkers</h3>
+          <p>Safe, sturdy support for those first steps.</p>
+        </div>
+      </article>
+
+      <article class="category-card reveal">
+        <div class="category-card__img">
+          <img src="assets/images/categories/strollers.jpg" alt="Baby Strollers" loading="lazy">
+        </div>
+        <div class="category-card__body">
+          <span class="category-card__icon">🚼</span>
+          <h3>Baby Strollers</h3>
+          <p>Comfortable rides for outings big and small.</p>
+        </div>
+      </article>
+
+      <article class="category-card reveal">
+        <div class="category-card__img">
+          <img src="assets/images/categories/educational.jpg" alt="Educational Toys" loading="lazy">
+        </div>
+        <div class="category-card__body">
+          <span class="category-card__icon">🧩</span>
+          <h3>Educational Toys</h3>
+          <p>Learning disguised as play, made just right.</p>
+        </div>
+      </article>
+
+      <article class="category-card reveal">
+        <div class="category-card__img">
+          <img src="assets/images/categories/ride-on.jpg" alt="Ride-on Toys" loading="lazy">
+        </div>
+        <div class="category-card__body">
+          <span class="category-card__icon">🚗</span>
+          <h3>Ride-on Toys</h3>
+          <p>Adventures on wheels for little explorers.</p>
+        </div>
+      </article>
+
+      <article class="category-card reveal">
+        <div class="category-card__img">
+          <img src="assets/images/categories/gifts.jpg" alt="Birthday Gifts" loading="lazy">
+        </div>
+        <div class="category-card__body">
+          <span class="category-card__icon">🎁</span>
+          <h3>Birthday Gifts</h3>
+          <p>Thoughtful presents for every celebration.</p>
+        </div>
+      </article>
+
+      <article class="category-card reveal">
+        <div class="category-card__img">
+          <img src="assets/images/categories/creative.jpg" alt="Creative Toys" loading="lazy">
+        </div>
+        <div class="category-card__body">
+          <span class="category-card__icon">🎨</span>
+          <h3>Creative Toys</h3>
+          <p>Art, craft, and imagination in every set.</p>
+        </div>
+      </article>
+
+      <article class="category-card reveal">
+        <div class="category-card__img">
+          <img src="assets/images/categories/school.jpg" alt="School Supplies" loading="lazy">
+        </div>
+        <div class="category-card__body">
+          <span class="category-card__icon">🎒</span>
+          <h3>School Supplies</h3>
+          <p>Everyday essentials for school-ready kids.</p>
+        </div>
+      </article>
+
+      <article class="category-card reveal">
+        <div class="category-card__img">
+          <img src="assets/images/categories/indoor-games.jpg" alt="Indoor Games" loading="lazy">
+        </div>
+        <div class="category-card__body">
+          <span class="category-card__icon">🎲</span>
+          <h3>Indoor Games</h3>
+          <p>Family fun for rainy days and quiet evenings.</p>
+        </div>
+      </article>
+
+      <article class="category-card reveal">
+        <div class="category-card__img">
+          <img src="assets/images/categories/gift-items.jpg" alt="Gift Items" loading="lazy">
+        </div>
+        <div class="category-card__body">
+          <span class="category-card__icon">🎀</span>
+          <h3>Gift Items</h3>
+          <p>Little extras that make every occasion special.</p>
+        </div>
+      </article>
+      <!-- ============ END CATEGORY CARDS ============ -->
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     FEATURED PRODUCTS SECTION
+     ============================================ -->
+<section class="products" id="products">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Featured Products</span>
+      <h2 class="section-title">Little favourites, handpicked for you</h2>
+      <p class="section-sub">Placeholder products shown below — call, WhatsApp, or visit us for current stock and pricing.</p>
+    </div>
+
+    <div class="product-grid" id="productGrid">
+
+      <!-- ============ PRODUCT CARD TEMPLATE ============
+           This exact structure is reused for every product.
+           To add a new product: duplicate this whole <article>,
+           then only change the 5 marked lines below.
+      ==================================================== -->
+      <article class="product-card reveal">
+        <div class="product-card__img">
+          <img src="assets/images/products/placeholder-1.jpg" alt="Plush Teddy Bear" loading="lazy"> <!-- Replace Image Here -->
+          <span class="product-card__tag">Bestseller</span>
+        </div>
+        <div class="product-card__body">
+          <h3>Soft Plush Teddy Bear</h3> <!-- Replace Product Name Here -->
+          <p>Super-soft, huggable companion for nap time and playtime alike.</p> <!-- Replace Description Here -->
+          <div class="product-card__footer">
+            <span class="product-card__price">₹499</span> <!-- Replace Price Here -->
+            <a href="https://wa.me/917009842642?text=Hi!%20I'm%20interested%20in%20the%20Soft%20Plush%20Teddy%20Bear" target="_blank" rel="noopener" class="btn btn--wa">Enquire</a>
+          </div>
+        </div>
+      </article>
+      <!-- Duplicate this card to add more products -->
+
+      <article class="product-card reveal">
+        <div class="product-card__img">
+          <img src="assets/images/products/placeholder-2.jpg" alt="Educational Building Blocks" loading="lazy">
+          <span class="product-card__tag">New</span>
+        </div>
+        <div class="product-card__body">
+          <h3>Educational Building Blocks</h3>
+          <p>Colourful stacking blocks that build fine motor skills and imagination.</p>
+          <div class="product-card__footer">
+            <span class="product-card__price">₹699</span>
+            <a href="https://wa.me/917009842642?text=Hi!%20I'm%20interested%20in%20the%20Educational%20Building%20Blocks" target="_blank" rel="noopener" class="btn btn--wa">Enquire</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card reveal">
+        <div class="product-card__img">
+          <img src="assets/images/products/placeholder-3.jpg" alt="Baby Stroller" loading="lazy">
+        </div>
+        <div class="product-card__body">
+          <h3>Lightweight Baby Stroller</h3>
+          <p>Foldable, all-terrain stroller built for comfort on every outing.</p>
+          <div class="product-card__footer">
+            <span class="product-card__price">₹4,499</span>
+            <a href="https://wa.me/917009842642?text=Hi!%20I'm%20interested%20in%20the%20Lightweight%20Baby%20Stroller" target="_blank" rel="noopener" class="btn btn--wa">Enquire</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card reveal">
+        <div class="product-card__img">
+          <img src="assets/images/products/placeholder-4.jpg" alt="Baby Walker" loading="lazy">
+        </div>
+        <div class="product-card__body">
+          <h3>Musical Baby Walker</h3>
+          <p>Sturdy walker with musical panel to encourage those first steps.</p>
+          <div class="product-card__footer">
+            <span class="product-card__price">₹1,999</span>
+            <a href="https://wa.me/917009842642?text=Hi!%20I'm%20interested%20in%20the%20Musical%20Baby%20Walker" target="_blank" rel="noopener" class="btn btn--wa">Enquire</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card reveal">
+        <div class="product-card__img">
+          <img src="assets/images/products/placeholder-5.jpg" alt="Ride-on Car" loading="lazy">
+          <span class="product-card__tag">Popular</span>
+        </div>
+        <div class="product-card__body">
+          <h3>Battery Ride-on Car</h3>
+          <p>A miniature car with real horn and lights — big smiles guaranteed.</p>
+          <div class="product-card__footer">
+            <span class="product-card__price">₹5,999</span>
+            <a href="https://wa.me/917009842642?text=Hi!%20I'm%20interested%20in%20the%20Battery%20Ride-on%20Car" target="_blank" rel="noopener" class="btn btn--wa">Enquire</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card reveal">
+        <div class="product-card__img">
+          <img src="assets/images/products/placeholder-6.jpg" alt="Birthday Gift Hamper" loading="lazy">
+        </div>
+        <div class="product-card__body">
+          <h3>Birthday Gift Hamper</h3>
+          <p>A curated set of toys and treats, wrapped and ready to gift.</p>
+          <div class="product-card__footer">
+            <span class="product-card__price">₹899</span>
+            <a href="https://wa.me/917009842642?text=Hi!%20I'm%20interested%20in%20the%20Birthday%20Gift%20Hamper" target="_blank" rel="noopener" class="btn btn--wa">Enquire</a>
+          </div>
+        </div>
+      </article>
+      <!-- ============ END PRODUCT CARDS ============ -->
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     GALLERY SECTION (masonry + lightbox)
+     ============================================ -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Gallery</span>
+      <h2 class="section-title">A peek inside Baby Garden</h2>
+    </div>
+
+    <!-- To add photos: drop the image in assets/images/gallery/
+         and copy one <div class="gallery__item"> below. -->
+    <div class="gallery__grid" id="galleryGrid">
+      <div class="gallery__item reveal"><img src="assets/images/gallery/gallery-1.jpg" alt="Store display" loading="lazy"></div>
+      <div class="gallery__item reveal"><img src="assets/images/gallery/gallery-2.jpg" alt="Toy shelf" loading="lazy"></div>
+      <div class="gallery__item reveal"><img src="assets/images/gallery/gallery-3.jpg" alt="Gift wrapping corner" loading="lazy"></div>
+      <div class="gallery__item reveal"><img src="assets/images/gallery/gallery-4.jpg" alt="Stroller section" loading="lazy"></div>
+      <div class="gallery__item reveal"><img src="assets/images/gallery/gallery-5.jpg" alt="Happy customer" loading="lazy"></div>
+      <div class="gallery__item reveal"><img src="assets/images/gallery/gallery-6.jpg" alt="Festival display" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox overlay -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox__close" id="lightboxClose" aria-label="Close">&times;</button>
+  <img src="" alt="" id="lightboxImg">
+</div>
+
+<!-- ============================================
+     WHY CHOOSE US SECTION
+     ============================================ -->
+<section class="why-us" id="why-us">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why Families Choose Us</span>
+      <h2 class="section-title">Small store, big trust</h2>
+    </div>
+
+    <div class="feature-grid">
+      <!-- Duplicate to add more feature cards -->
+      <div class="feature-card reveal"><span class="feature-card__icon">✨</span><h3>Premium Quality</h3><p>Only products we'd trust with our own children.</p></div>
+      <div class="feature-card reveal"><span class="feature-card__icon">💰</span><h3>Affordable Prices</h3><p>Premium doesn't have to mean expensive.</p></div>
+      <div class="feature-card reveal"><span class="feature-card__icon">🧸</span><h3>Huge Collection</h3><p>From newborn to school-age, we've got it covered.</p></div>
+      <div class="feature-card reveal"><span class="feature-card__icon">🤝</span><h3>Friendly Service</h3><p>Real advice from people who genuinely care.</p></div>
+      <div class="feature-card reveal"><span class="feature-card__icon">🏆</span><h3>Trusted Store</h3><p>A familiar name across Moga for years.</p></div>
+      <div class="feature-card reveal"><span class="feature-card__icon">🆕</span><h3>Latest Products</h3><p>Our shelves stay fresh with new arrivals.</p></div>
+      <div class="feature-card reveal"><span class="feature-card__icon">📞</span><h3>Excellent Support</h3><p>Questions before or after your visit? We're here.</p></div>
+      <div class="feature-card reveal"><span class="feature-card__icon">🎁</span><h3>Gift Wrapping</h3><p>Free wrapping to make every gift feel special.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     TESTIMONIALS SECTION
+     ============================================ -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Testimonials</span>
+      <h2 class="section-title">What parents in Moga are saying</h2>
+    </div>
+
+    <div class="testimonial-grid">
+      <!-- Duplicate to add more reviews -->
+      <div class="testimonial-card reveal">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p>"The staff helped me pick the perfect gift for my niece's birthday. Wonderful collection and even better service!"</p>
+        <div class="testimonial-card__author">— Simran K.</div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p>"Bought a stroller here and it's been amazing. Good quality at a fair price, and they explained everything patiently."</p>
+        <div class="testimonial-card__author">— Rajwinder S.</div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p>"My go-to store for anything baby-related. They always have the newest toys before anyone else in the city."</p>
+        <div class="testimonial-card__author">— Priya M.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     FAQ SECTION
+     ============================================ -->
+<section class="faq" id="faq">
+  <div class="container container--narrow">
+    <div class="section-head reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="section-title">Good to know</h2>
+    </div>
+
+    <div class="faq-list">
+      <!-- Duplicate .faq-item to add more questions -->
+      <div class="faq-item reveal">
+        <button class="faq-item__q">Do you offer gift wrapping? <span>+</span></button>
+        <div class="faq-item__a"><p>Yes! Gift wrapping is complimentary on all purchases made in-store.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-item__q">Can I reserve a product before visiting? <span>+</span></button>
+        <div class="faq-item__a"><p>Absolutely — message us on WhatsApp or call ahead and we'll hold it for you.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-item__q">Do you have products for newborns? <span>+</span></button>
+        <div class="faq-item__a"><p>Yes, we stock a full newborn range including feeding essentials and baby care basics.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-item__q">Do you deliver within Moga? <span>+</span></button>
+        <div class="faq-item__a"><p>For local delivery availability, please call or WhatsApp us directly with your order.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-item__q">What are your store timings? <span>+</span></button>
+        <div class="faq-item__a"><p>We're open daily — call ahead for our current hours, especially on festivals.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     CONTACT SECTION
+     ============================================ -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact__grid">
+      <div class="contact__info reveal">
+        <span class="eyebrow">Get In Touch</span>
+        <h2 class="section-title">Visit Baby Garden</h2>
+        <p>Have a question, or want to check if we have something in stock? Reach out — we're happy to help.</p>
+
+        <ul class="contact__list">
+          <li>
+            <span class="contact__icon">📍</span>
+            <div><strong>Location</strong><br>Moga, Punjab, India</div>
+          </li>
+          <li>
+            <span class="contact__icon">📞</span>
+            <div><strong>Phone</strong><br><a href="tel:+917009842642">+91 70098 42642</a></div>
+          </li>
+          <li>
+            <span class="contact__icon">✉️</span>
+            <div><strong>Email</strong><br><a href="mailto:Manavbansal145@gmail.com">Manavbansal145@gmail.com</a></div>
+          </li>
+          <li>
+            <span class="contact__icon">📷</span>
+            <div><strong>Instagram</strong><br><a href="https://www.instagram.com/babygarden2021" target="_blank" rel="noopener">@babygarden2021</a></div>
+          </li>
+        </ul>
+
+        <div class="contact__buttons">
+          <a href="tel:+917009842642" class="btn btn--primary">Call Now</a>
+          <a href="mailto:Manavbansal145@gmail.com" class="btn btn--outline">Email Us</a>
+          <a href="https://www.instagram.com/babygarden2021" target="_blank" rel="noopener" class="btn btn--outline">Instagram</a>
+        </div>
+      </div>
+
+      <div class="contact__map reveal">
+        <!-- Replace with real embed src once available -->
+        <iframe
+          src="https://www.google.com/maps?q=Moga,Punjab,India&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Baby Garden location map">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     FOOTER
+     ============================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <a href="#home" class="nav__logo footer__logo">Baby<span>Garden</span></a>
+        <p>Everything your little one needs, under one roof. Proudly serving Moga families.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <a href="#about">About</a>
+        <a href="#categories">Categories</a>
+        <a href="#products">Products</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Business Info</h4>
+        <p>Baby Garden<br>Moga, Punjab, India</p>
+        <p><a href="tel:+917009842642">+91 70098 42642</a></p>
+        <p><a href="mailto:Manavbansal145@gmail.com">Manavbansal145@gmail.com</a></p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Follow Us</h4>
+        <a href="https://www.instagram.com/babygarden2021" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; <span id="year"></span> Baby Garden. All rights reserved.</p>
+      <div class="footer__legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating action buttons -->
+<a href="https://wa.me/917009842642" target="_blank" rel="noopener" class="fab fab--whatsapp" aria-label="WhatsApp us">
+  <svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M17.5 14.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C9.6 9 9.1 7.8 8.9 7.3c-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.4z"/><path fill="currentColor" d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.1L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3C4 14.9 3.6 13.5 3.6 12c0-4.6 3.8-8.4 8.4-8.4s8.4 3.8 8.4 8.4-3.8 8.4-8.4 8.4z"/></svg>
+</a>
+
+<button class="fab fab--top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
