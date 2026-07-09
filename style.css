@@ -506,42 +506,73 @@ border-bottom:1px solid rgba(255,255,255,.08);
 .testimonial-card__stars { color: var(--yellow); font-size: 1.1rem; margin-bottom: 12px; letter-spacing: 2px; }
 .testimonial-card p { font-style: italic; color: var(--text); margin-bottom: 18px; }
 .testimonial-card__author { font-weight: 800; color: var(--sky-dark); font-size: 14px; }
+/* ===========================
+   FAQ SECTION
+=========================== */
 
-/* ==================================================
-   FAQ
-   ================================================== */
-.faq { background: var(--white); }
+.faq {
+    background: #0f172a;
+    padding: 80px 0;
+}
+
 .faq-item {
-  border: 1px solid rgba(51,51,51,0.08);
-  border-radius: var(--radius-sm);
-  margin-bottom: 14px;
-  overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }
+
 .faq-item__q {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 22px;
-  font-weight: 700;
-  font-size: 15px;
-  text-align: left;
-  color: #ffffff !important;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 22px;
+    background: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
+
+.faq-item__q:hover {
+    background: #f5f5f5;
+    color: #ff9800;
+}
+
 .faq-item__q span {
-  transition: transform 0.3s ease;
-  color: #4FC3F7;
-  font-size: 1.3rem;
+    color: #000000;
+    font-size: 1.4rem;
+    transition: transform 0.3s ease;
 }
-.faq-item.is-open .faq-item__q span { transform: rotate(45deg); }
+
+.faq-item.is-open .faq-item__q span {
+    transform: rotate(45deg);
+}
+
 .faq-item__a {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-  padding: 0 22px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+    background: #ffffff;
+    padding: 0 22px;
 }
-.faq-item__a p { color: var(--text-soft); padding-bottom: 18px; font-size: 14.5px; }
-.faq-item.is-open .faq-item__a { max-height: 200px; }
+
+.faq-item__a p {
+    color: #000000;
+    font-size: 15px;
+    line-height: 1.7;
+    padding: 18px 0 20px;
+}
+
+.faq-item.is-open .faq-item__a {
+    max-height: 250px;
+}
 
 /* ==================================================
    CONTACT
